@@ -1,11 +1,12 @@
 ---
-title: Topics
+title: Security
 layout: page
 ---
 
-This page shows all GitHub repos, grouped by the topics assigned to them.
+This page shows Security GitHub repos, grouped by the topics assigned to them.
 
-{% assign sorted_topics = site.data.all_topics | sort %}
+<!-- {% assign sorted_topics = site.data.all_topics | sort %} -->
+{% assign sorted_topics = site.data.security %}
 <div id='repo-topics'>
 {% for topic in sorted_topics %}
     <div>

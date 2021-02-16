@@ -3,7 +3,7 @@ title: Repos
 layout: page
 ---
 
-This page shows all public GitHub repos which are owned by me.
+This page shows all public GitHub repos.
 
 <div id="repos">
     <div class="container">

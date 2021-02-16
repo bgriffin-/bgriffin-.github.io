@@ -1,9 +1,9 @@
 ---
-title: Topics
+title: Data-Center
 layout: page
 ---
 
-This page shows all GitHub repos, grouped by the topics assigned to them.
+This page shows Data-Center GitHub repos, grouped by the topics assigned to them.
 
 {% assign sorted_topics = site.data.all_topics | sort %}
 <div id='repo-topics'>

@@ -1,19 +1,23 @@
 /** Basic **/
 
-html {
-  background-color: #333;
+html  {
+  // background-color: #333;
+  // background-color: hsl(204, 86%, 53%);
+  background-color: $light;
 }
 
 body {
   height: 100%;
-  color: white;
+  // color: white;
+  color: $dark;
 }
 
 .content h1,
 .content h2,
 .content h3,
 .content h4 {
-  color: white;
+  // color: white;
+  color: $dark;
 }
 
 /* Using dark background means treating links differently in main.*/

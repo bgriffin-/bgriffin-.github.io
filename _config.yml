@@ -1,14 +1,14 @@
 ### Site metadata ###
 
-title: My GitHub Projects
+title: GitHub Projects
 
-repository: MichaelCurrin/my-github-projects
-author: Michael Currin
-twitter_handle: MichaelCurrin
+repository: bgriffin-/github-projects
+author: Ben Griffin
+twitter_handle: #some_twitter_handle
 
 ### Build settings ###
 
-url: https://michael-currin.netlify.app
+url: https://bgriffin-.netlify.app
 baseurl: ""
 
 theme: jekyll-bulma
@@ -18,6 +18,9 @@ permalink: pretty
 header_pages:
   - repos.md
   - topics.md
+  - datacenter.md
+  - security.md
+  # - wan.md
   - about.md
 
 collections:
