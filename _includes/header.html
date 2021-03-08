@@ -2,9 +2,15 @@
 <!-- <nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation"> -->
 <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" href="{% link index.md %}">
-            {{ site.title | upcase }}
+        <a href="{% link index.md %}">
+            <img src="/juniper_reverse_rgb_white_small.png" alt="Juniper Networks" width="195" height="60" />
         </a>
+        <hr class="navbar-divider">
+
+        <!-- <a class="navbar-item" href="{% link index.md %}"> -->
+        <!-- <img src="/juniper_reverse_rgb_white_small.png" alt="Juniper Networks" /> -->
+        <!-- {{ site.title | upcase }} -->
+        <!-- </a> -->
 
         {%- comment -%} Hamburger made of lines - nothing to customize here. {%- endcomment -%}
         <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
@@ -20,7 +26,7 @@
             {%- for path in site.header_pages -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
-            <div class="navbar-item">
+            <div class="navbar-item is-size-4 has-text-weight-bold">
                 <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             </div>
             {%- endif -%}

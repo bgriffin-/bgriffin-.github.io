@@ -1,6 +1,6 @@
 ### Site metadata ###
 
-title: GitHub Projects
+title: Juniper Networks Automation
 
 repository: bgriffin-/github-projects
 author: Ben Griffin
@@ -20,7 +20,7 @@ header_pages:
   - topics.md
   - datacenter.md
   - security.md
-  # - wan.md
+  - wan.md
   - about.md
 
 collections:

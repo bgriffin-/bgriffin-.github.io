@@ -12,6 +12,19 @@ body {
   color: $dark;
 }
 
+.navbar-item {
+  a {
+    // color: cornflowerblue;
+    color: $light;
+  }
+
+  a:hover {
+    color: lightskyblue;
+  }
+}
+
+
+
 .content h1,
 .content h2,
 .content h3,

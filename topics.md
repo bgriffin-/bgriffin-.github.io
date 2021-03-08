@@ -2,8 +2,11 @@
 title: Topics
 layout: page
 ---
-
-This page shows all GitHub repos, grouped by the topics assigned to them.
+<div class="container">
+    <h2 class="title">
+        This page shows all GitHub repos, grouped by the topics assigned to them.
+    </h2>
+</div>    
 
 {% assign sorted_topics = site.data.all_topics | sort %}
 <div id='repo-topics'>

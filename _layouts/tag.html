@@ -1,0 +1,57 @@
+---
+layout: page
+---
+{% assign tag = page.title | downcase %}
+
+<div class="container">
+    <h2 class="title">
+        {{page.title}} centric repos, grouped by topic.
+    </h2>
+</div>
+<div id="repos">
+    <div class="container">
+        <!-- Filter controls -->
+        <div class="field">
+            <p class="control has-icons-left">
+                <input class="search input" type="text" placeholder="Search repo names">
+                <span class="icon is-left">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                </span>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        {% assign sorted_topics = site.data.all_topics | sort %}
+        {% for topic in sorted_topics %}
+        {% if topic[0] == tag %}
+        <div>
+            <a href="#topic-{{ topic[0] }}">
+                <h2 id="topic-{{ topic [0] }}">&#35;{{ topic[0] }}</h2>
+            </a>
+            {% assign repos = topic[1] %}
+            <div id="repo-cards" class="columns is-multiline list">
+                {% for repo_data in repos %}
+                {% assign repo = repo_data[1] %}
+                <div class="column is-3-widescreen is-4-desktop is-6-tablet is-8-mobile">
+                    {% include repo-card.html %}
+                </div>
+                {% endfor -%}
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+<script>
+    var options = {
+        valueNames: [
+            {
+                name: 'list-name',
+                attr: 'data-name'
+            }
+        ]
+    };
+    var userList = new List('repos', options);
+</script>

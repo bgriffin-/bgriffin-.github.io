@@ -18,3 +18,5 @@ group :jekyll_plugins do
 end
 
 gem "rufo", "~> 0.12.0", :group => :development
+
+gem "webrick", "~> 1.7"

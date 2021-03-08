@@ -32,6 +32,7 @@ You can fork and reuse this project to make a site showing your own GitHub repos
 
 ## Background
 
+
 The idea was inspired a quickstart dev portfolio that GitHub supplies:
 
 - Original repo: [github/personal-website](https://github.com/github/personal-website)

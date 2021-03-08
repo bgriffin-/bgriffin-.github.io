@@ -3,8 +3,9 @@ title: Repos
 layout: page
 ---
 
+<h2>
 This page shows all public GitHub repos.
-
+</h2>
 <div id="repos">
     <div class="container">
         <!-- Filter controls -->
@@ -17,10 +18,8 @@ This page shows all public GitHub repos.
             </p>
         </div>
     </div>
-
     <br>
     <br>
-
     <div class="container">
         <div id="repo-cards" class="columns is-multiline list">
             {% for repo_data in site.data.all_repos %}
@@ -31,9 +30,7 @@ This page shows all public GitHub repos.
             {% endfor %}
         </div>
     </div>
-
 </div>
-
 <script>
         var options = {
             valueNames: [
