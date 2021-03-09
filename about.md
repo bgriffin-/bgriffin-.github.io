@@ -7,6 +7,8 @@ layout: page
 
 This is a listing of the current repo's under this Org/Site. It is an attempt to simplify finding content based on catagories rathner than a listing of all repo's. 
 
+Reasons.
+
 This website is a showcase of my own repos and the topics they fit into. For my own ease of using in searching and comparing my projects and for sharing them with others beyond the limitations of the standard view of repos on a profile on GitHub.
 
 
