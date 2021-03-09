@@ -11,6 +11,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Cache to Shorten Build Time
+        uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
       - name: Set-up Node
         uses: actions/setup-node@v1
         with:
@@ -18,7 +25,7 @@ jobs:
       - name: Set-up jekyll
         uses: helaili/jekyll-action@2.0.5
         with:
-          token: ${{secrets.GITHUB_TOKEN}}
+          # token: ${{secrets.GITHUB_TOKEN}}
           target_branch: 'gh-pages'
       # - run: npm install
       # - run: npm run build
