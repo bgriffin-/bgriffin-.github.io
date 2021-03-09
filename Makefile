@@ -2,7 +2,7 @@ SHELL = /bin/bash
 JS_DIR = assets/js
 export GITHUB_TOKEN
 
-default: install build-dev
+default: install
 
 all: install build-dev
 
