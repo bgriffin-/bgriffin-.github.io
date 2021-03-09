@@ -19,6 +19,7 @@ jobs:
         uses: helaili/jekyll-action@2.0.5
         with:
           token: ${{secrets.GITHUB_TOKEN}}
+          target_branch: 'gh-pages'
       # - run: npm install
       # - run: npm run build
       # - run: npm test
