@@ -7,7 +7,7 @@ vendor/
 node_modules/
 assets/
 
-_site/
+#site/
 
 # Private auth token.
 .env
