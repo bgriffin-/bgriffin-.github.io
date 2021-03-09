@@ -27,3 +27,5 @@ jobs:
       #     build_dir: build
         env:
           JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+          GITHUB_TOKEN: $ {{ secrets.GITHUB_TOKEN }}
+          
