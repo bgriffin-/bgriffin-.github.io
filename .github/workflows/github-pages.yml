@@ -17,8 +17,6 @@ jobs:
           node-version: "10.x"
       - name: Set-up jekyll
         uses: helaili/jekyll-action@2.0.5
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
       # - run: npm install
       # - run: npm run build
       # - run: npm test
@@ -29,6 +27,7 @@ jobs:
       #     build_dir: build
         env:
           JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
 
           
