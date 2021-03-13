@@ -5,23 +5,11 @@ layout: page
 
 ## Why
 
-This is a listing of the current repo's under this Org/Site. It is an attempt to simplify finding content based on catagories rathner than a listing of all repo's. 
-
-Reasons.
-
-update keys 3
-
-This website is a showcase of my own repos and the topics they fit into. For my own ease of using in searching and comparing my projects and for sharing them with others beyond the limitations of the standard view of repos on a profile on GitHub.
-
-
-## Where
-
-[![MichaelCurrin - my-github-projects](https://img.shields.io/static/v1?label=MichaelCurrin&message=my-github-projects&color=blue&logo=github)](https://github.com/MichaelCurrin/my-github-projects)
-
+This is a listing of the current repo's under this Org/Site. It is an attempt to simplify finding content based on catagories rather than a listing of all repo's. 
 
 ## What
 
-This project a static website hosted on [Netlify](netlify.com) for free and uses the following tools:
+This project a static website hosted on [GitHub](https://github.com) for free and uses the following tools:
 
 - [![Made with Jekyll](https://img.shields.io/badge/Made_with-Jekyll-blue?logo=jekyll)](https://jekyllrb.com)
 - [![Jekyll theme](https://img.shields.io/badge/Theme-jekyll%2D-bulma-blue)](https://github.com/jekyll-octopod/jekyll-bulma)
